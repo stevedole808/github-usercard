@@ -2,6 +2,25 @@
            (replacing the palceholder with your Github name):
            https://api.github.com/users/<your name>
 */
+// function myCard(imgUrl)
+// const newCard = document.createElement('div'),
+//       newImage = document.createElement('img'),
+//       newH1 = document.createElement('h1'),
+//       newH2 = document.createElement('h2'),
+//       newLocation = document.createElement('p'),
+//       newProfile = document.createElement('p'),
+//       newFollowers = document.createElement('p'),
+//       newFollowing = document.createElement('p'),
+//       newBio = document.createElement('p')
+
+//       newCard.textContent = "container";
+//       newH1.textContent = "header";
+
+axios.get("https://api.github.com/users/stevedole808")
+  .then(response => {
+  console.log(response);
+  
+})
 
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
@@ -24,7 +43,7 @@
           user, and adding that card to the DOM.
 */
 
-const followersArray = [];
+// const followersArray = [];
 
 /* Step 3: Create a function that accepts a single object as its only argument,
           Using DOM methods and properties, create a component that will return the following DOM element:
